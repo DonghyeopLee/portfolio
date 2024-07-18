@@ -81,6 +81,19 @@ export function About() {
               <img src={jsIcon} alt="JavaScript" />
             </ScrollAnimation>
           </div>
+        <div>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
+          <h3>Education:</h3>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+        <p>
+            University Of Technology</p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+         <p>
+            Enterprise Software development</p>
+        </ScrollAnimation>   
+      </div>   
         </div>
       </div>
       <div className="about-image">
@@ -93,21 +106,7 @@ export function About() {
           <img src={mochi} alt="mochi" />
         </ScrollAnimation>
       </div>
-      <div>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h3>Education:</h3>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-        <p>
-            University Of Technology</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-         <p>
-            Enterprise Software development</p>
-        </ScrollAnimation>
       
-      </div>   
       
 
     </Container>
