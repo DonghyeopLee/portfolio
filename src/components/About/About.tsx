@@ -21,7 +21,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Donghyeop Lee, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and React, I have the tools to bring any website vision to life.
+            Hi there! I'm Donghyeop Lee, a passionate Junior Developer based in Sydney, NSW. I am on a journey to build a successful career in IT with a strong foundation in full-stack development and a background in information systems and IT project management.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
