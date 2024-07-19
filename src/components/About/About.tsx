@@ -33,7 +33,7 @@ export function About() {
             I am passionate about continuously learning and keeping up with the latest advancements in technology. I am always on the lookout for opportunities to further develop my skills and contribute to innovative projects that make a positive impact.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
-          <h2>Education:</h2>
+          <h3>Education:</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
         <p>
@@ -41,7 +41,7 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
          <p>
-         Major: Enterprise Software development Sub-Major</p>
+         Major: Enterprise Software development </p>
         </ScrollAnimation>   
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <h3>Here are my main skills:</h3>
@@ -99,13 +99,7 @@ export function About() {
           <img src={IAN} alt="IAN" />
         </ScrollAnimation>
       </div>
-      <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-          <img src={mochi} alt="mochi" />
-        </ScrollAnimation>
-      </div>
-      
-      
+       
 
     </Container>
   )

@@ -2,6 +2,7 @@ import Particles from "react-tsparticles"
 import { Container } from "./styles";
 import { Hero } from "../Hero/Hero";
 import { About } from "../About/About";
+import { Slider } from "../Slider/Slider";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
 import wordpress from "../../assets/python.svg";
@@ -159,16 +160,6 @@ export function Main() {
                   "height": 20
                 },
                 {
-                  "src": wordpress,
-                  "width": 20,
-                  "height": 20
-                },
-                {
-                  "src": shopify,
-                  "width": 20,
-                  "height": 20
-                },
-                {
                   "src": htmlIcon,
                   "width": 20,
                   "height": 20
@@ -257,6 +248,7 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
+      <Slider></Slider>
       <Project></Project>
       <Contact></Contact>
     </Container>

@@ -5,9 +5,9 @@ import Illustration from "../../assets/illustration.svg"
 import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github.svg'
-import whatsapp from '../../assets/whatsapp.svg'
+import astronaut from '../../assets/astronaut.png'
 import Hello from '../../assets/Hello.gif'
-import telegram from '../../assets/telegram.svg'
+
 export function Hero() {
   return (
     <Container id="home">
@@ -20,6 +20,9 @@ export function Hero() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
           <h3>Full Stack Developer</h3>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
+          <p>Junior Developer pursuing a career in IT, preparing with software development skills and previous training in information system and IT project management.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume"></p>
@@ -49,7 +52,7 @@ export function Hero() {
       </div>
       <div className="hero-image">
         <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Ilustração" />
+          <img src={astronaut} alt="astronaut" />
         </ScrollAnimation>
       </div>
     </Container>

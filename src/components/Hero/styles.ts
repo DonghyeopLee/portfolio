@@ -47,7 +47,8 @@ export const Container = styled.section`
 
   .hero-image{
     img{
-      max-width: 500px;
+      max-width: 600px;
+      margin-right: 150px;
     }
   }
 
