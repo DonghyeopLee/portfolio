@@ -21,16 +21,16 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Donghyeop Lee, a website developer with a passion for creating custom online experiences for my clients. With a skill set including HTML, CSS, JavaScript, and React, I have the tools to bring any website vision to life.
+            Hi there! I'm Donghyeop Lee, a passionate Junior Developer based in Sydney, NSW. I am on a journey to build a successful career in IT with a strong foundation in full-stack development and a background in information systems and IT project management.
           </p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
           <p>
-            But my services go beyond just custom development - I'm also proficient in using CMS systems like WordPress and Shopify, making it easy for my clients to take control of their own websites and keep them up to date.</p>
+            On the backend, I have worked extensively with server-side languages such as Python, Java, and PHP to build robust and scalable applications. My expertise in database management includes designing and maintaining databases using MySQL and AWS. I am skilled in writing efficient SQL queries, optimizing database performance, and ensuring data integrity and security. Additionally, I have experience with API integration, enabling different software systems to communicate and work together efficiently.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
-            So if you're in need of a new website or just looking to revamp your current online presence, I'd love to chat and see how I can help. Let's bring your website dreams to reality together!</p>
+            I am passionate about continuously learning and keeping up with the latest advancements in technology. I am always on the lookout for opportunities to further develop my skills and contribute to innovative projects that make a positive impact.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <h2>Education:</h2>
