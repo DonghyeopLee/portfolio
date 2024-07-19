@@ -97,6 +97,35 @@ export function Project() {
             </footer>
           </div>
         </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Code</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/DonghyeopLee/Membership-Management-System" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>PortFolio</h3>
+              <p>A personal portfolio website developed using React and TypeScript to showcase my projects and skills. Visit my portfolio.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>TypeScript</li>
+                <li>React</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
       
       </div>
     </Container>
