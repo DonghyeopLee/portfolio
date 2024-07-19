@@ -57,18 +57,46 @@ export function Project() {
             </header>
             <div className="body">
               <h3>Membership-Management-System</h3>
-              <p>Developed a real-time hand gesture recognition system for intuitive 3D object manipulation. Leveraged a multimodal approach integrating OpenCV for video processing, MediaPipe for hand detection/landmark extraction, and scikit-learn for machine learning model training. Achieved 95.2% accuracy in hand gesture classification with efficient real-time performance.</p>
+              <p>A comprehensive solution for managing membership information, including storage, categorization, and retrieval. I used JavaFX for the frontend and built the backend architecture to support efficient data handling and implemented APIs for seamless frontend integration.</p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>OpenCV</li>
-                <li>MediaPipe</li>
-                <li>scikit-learn</li>
+                <li>Java</li>
+                <li>JavaFX</li>
               </ul>
             </footer>
           </div>
         </ScrollAnimation>
 
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Code</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/Michaellu948/IOSAssignment3" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Spending Tracker</h3>
+              <p>A personal finance management tool designed to help users track their expenses, set budgets, and achieve their financial goals. Developed as a university team project using iOS, I created the backend infrastructure to securely store user data, perform financial calculations, and generate insightful reports.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>IOS</li>
+                <li>Collabrate</li>
+                <li></li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
       
       </div>
     </Container>

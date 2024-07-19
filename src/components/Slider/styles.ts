@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+.Head2{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
 margin-top: 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,7 +83,7 @@ margin-top: 12rem;
     object-fit: cover;
   }
 @media only screen and (max-width: 960px) {
-    gap: 8rem;
+
     .image_slider {
       max-width: 100%;
       margin-top: 4rem;

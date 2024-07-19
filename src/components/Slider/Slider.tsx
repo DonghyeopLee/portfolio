@@ -17,8 +17,10 @@ export function Slider() {
     setSelectdId((prev) => (prev >= images.length ? 1 : prev + 1));
   };
   return (
+    
     <Container id="about">
 
+          
     <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
       <div className="image">
         <div className="image_slider">
