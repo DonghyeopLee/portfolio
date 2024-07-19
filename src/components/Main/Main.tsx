@@ -248,8 +248,8 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
-      <Slider></Slider>
       <Project></Project>
+      <Slider></Slider>
       <Contact></Contact>
     </Container>
   );

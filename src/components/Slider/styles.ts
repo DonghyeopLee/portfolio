@@ -77,7 +77,8 @@ margin-top: 12rem;
     border: 2px solid transparent;
     object-fit: cover;
   }
-     @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) {
+    gap: 8rem;
     .image_slider {
       max-width: 100%;
       margin-top: 4rem;

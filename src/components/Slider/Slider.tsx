@@ -54,15 +54,26 @@ export function Slider() {
       </div>
       </ScrollAnimation>
       <div>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-            <h2>MY CAT: Mochi</h2>
+            <ScrollAnimation animateIn="fadeInRight" delay={0.10 * 1000}>
+            <h1>My Cutie CAT</h1>
             </ScrollAnimation>
+            <br/>
             <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-            <h3>Emjoy with my cutie cat</h3>
+            <h2>CAT:  Mochi</h2>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-            <p>ENjoy </p>
+            <br/>
+            <ScrollAnimation animateIn="fadeInRight" delay={0.30 * 1000}>
+            <h2>Age:  3 Years old</h2>
             </ScrollAnimation>
+            <br/>
+            <ScrollAnimation animateIn="fadeInRight" delay={0.40 * 1000}>
+            <h2>Birth: 2021.11.7</h2>
+            </ScrollAnimation>
+            <br/>
+            <ScrollAnimation animateIn="fadeInRight" delay={0.40 * 1000}>
+            <h2>Favorite Food: Chicken</h2>
+            </ScrollAnimation>
+            <br/>
     </div>
     </Container>
   )

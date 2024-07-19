@@ -19,14 +19,14 @@ export function Project() {
                 <a href="https://github.com/DonghyeopLee/cakestore" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" />
                 </a>
-                <a href="https://medibook.vinayaksingh.com" target="_blank" rel="noreferrer">
+                <a href="" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>Cake store: cake list and order cakes</h3>
-              <p>Developed a secure medical appointment management platform with CRUD functionality, utilizing role-based access control, encryption techniques, and a robust MySQL database with normalized schema design and stored procedures for efficient scheduling, data privacy, and reliable retrieval of patient records.</p>
+              <h3>Cake store</h3>
+              <p>An e-commerce platform developed using PHP and MySQL, featuring a user-friendly interface and secure payment processing. I configured and managed the backend systems to handle product inventory, user authentication, and order processing.</p>
             </div>
             <footer>
               <ul className="tech-list">
@@ -47,16 +47,16 @@ export function Project() {
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
               <div className="project-links">
-                <a href="https://github.com/CodeVinayak/Real-Time-Hand-Gesture-Driven-3D-Object-Manipulation" target="_blank" rel="noreferrer">
+                <a href="https://github.com/DonghyeopLee/Membership-Management-System" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" />
                 </a>
-                <a href="https://youtu.be/NOm-3MynPLE" target="_blank" rel="noreferrer">
+                <a href="" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>Real-Time Hand Gesture-Driven 3D Object Manipulation</h3>
+              <h3>Membership-Management-System</h3>
               <p>Developed a real-time hand gesture recognition system for intuitive 3D object manipulation. Leveraged a multimodal approach integrating OpenCV for video processing, MediaPipe for hand detection/landmark extraction, and scikit-learn for machine learning model training. Achieved 95.2% accuracy in hand gesture classification with efficient real-time performance.</p>
             </div>
             <footer>
