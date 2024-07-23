@@ -90,8 +90,8 @@ export function Project() {
             </div>
             <footer>
               <ul className="tech-list">
-                <li>IOS</li>
-                <li>Collabrate</li>
+                <li>Swift</li>
+                <li>Collabration</li>
                 <li></li>
               </ul>
             </footer>
