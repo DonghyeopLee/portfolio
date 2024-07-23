@@ -106,7 +106,7 @@ export function Project() {
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
               <div className="project-links">
-                <a href="https://github.com/DonghyeopLee/Membership-Management-System" target="_blank" rel="noreferrer">
+                <a href="https://github.com/DonghyeopLee/portfolio" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" />
                 </a>
                 <a href="" target="_blank" rel="noreferrer">
@@ -126,6 +126,39 @@ export function Project() {
             </footer>
           </div>
         </ScrollAnimation>
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                <title>Code</title>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <div className="project-links">
+                <a href="https://github.com/DonghyeopLee/ToDoAPP" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+          <div className="body">
+            <h3>TodoAPP</h3>
+            <p>A Todo application developed using FastAPI and Python. It allows users to create, update, and delete tasks, demonstrating the integration of a modern web API with a robust backend. Check out the project to see how these technologies come together.</p>
+                </div>
+            <footer>
+                <ul className="tech-list">
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>API</li>
+                  <li>Pydantic</li>
+                  <li>Tortoise ORM</li>
+                  <li>AsyncIO</li>
+                </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
       
       </div>
     </Container>
