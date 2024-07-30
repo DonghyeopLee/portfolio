@@ -3,6 +3,7 @@ import IAN from "../../assets/Ian.jpg";
 import mochi from "../../assets/mochi.jpg";
 import java from "../../assets/java.svg";
 import htmlIcon from "../../assets/html-icon.svg";
+import aws from "../../assets/aws.svg";
 import cssIcon from "../../assets/css-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import python from "../../assets/python.svg";
@@ -60,6 +61,11 @@ export function About() {
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
               <img src={reactIcon} alt="React" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
+              <img src={aws} alt="aws" />
             </ScrollAnimation>
           </div>
           <div className="hability">
