@@ -38,11 +38,13 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
         <p>
-           University Of Technology</p>
+           University Of Technology Sydney</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
          <p>
          Major: Enterprise Software development </p>
+         <p>
+         Sub-Major: Networking and Cybersecurity </p>
         </ScrollAnimation>   
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
           <h3>Here are my main skills:</h3>
