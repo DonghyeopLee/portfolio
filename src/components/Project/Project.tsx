@@ -25,7 +25,7 @@ export function Project() {
               </div>
             </header>
             <div className="body">
-              <h3>Nanking App</h3>
+              <h3>Banking App</h3>
               <p>In this project, I built a RESTful API for a simple banking application using Spring Boot, Spring Data JPA (Hibernate), and MySQL. The API is designed to handle CRUD operations (Create, Read, Update, Delete) efficiently, allowing users to interact with banking data stored in a MySQL database. It supports endpoints for creating new accounts, fetching account details, updating transactions, and deleting resources, ensuring smooth banking operations and robust data management.</p>
             </div>
             <footer>
