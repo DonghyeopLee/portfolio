@@ -25,6 +25,34 @@ export function Project() {
               </div>
             </header>
             <div className="body">
+              <h3>Nanking App</h3>
+              <p>In this project, I built a RESTful API for a simple banking application using Spring Boot, Spring Data JPA (Hibernate), and MySQL. The API is designed to handle CRUD operations (Create, Read, Update, Delete) efficiently, allowing users to interact with banking data stored in a MySQL database. It supports endpoints for creating new accounts, fetching account details, updating transactions, and deleting resources, ensuring smooth banking operations and robust data management.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>Spring Boot</li>
+                <li>Rest API</li>
+                <li>JPA</li>
+                <li>MySQL </li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+      <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              <div className="project-links">
+                <a href="https://github.com/DonghyeopLee/RestAPI" target="_blank" rel="noreferrer">
+                  <img src={githubIcon} alt="Visit site" />
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
               <h3>Rest API</h3>
               <p>In this project, I built a RESTful API using Node.js and MongoDB. The API is designed to handle CRUD operations (Create, Read, Update, Delete) efficiently, allowing users to interact with data stored in a MongoDB database. It supports endpoints for creating new records, fetching existing data, updating entries, and deleting resources.</p>
             </div>
