@@ -10,8 +10,7 @@ export const images = [
       image: Acchtecture,
       title: "Server-Side Web Application Architecture",
       subtitle: "A Layered Approach to Efficient Web Application",
-      description: `This diagram illustrates the layered structure of a server-side web application architecture. The architecture is divided into distinct components, each handling specific responsibilities to ensure seamless web application functionality:
-
+      description: `
 Web Application Layer:
 • Contains the database (DB) for data storage and HTML templates for rendering views
 • The View Generator retrieves data from the database and combines it with templates to create dynamic web pages
