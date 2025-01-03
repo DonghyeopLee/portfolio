@@ -2,81 +2,93 @@ import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
 import { images } from "./image";
 import { useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 interface Image {
     id: number;
     name: string;
     image: string;
+    title: string;
+    subtitle: string;
+   description: string;
   }
+
+interface SlideData {
+  id: number;
+  image: string;
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
 export function Slider() {
-    const [selectedId, setSelectdId] = useState<number>(1);
+    const [currentSlide, setCurrentSlide] = useState<number>(0);
+  
+  // Convert the imported images to SlideData format
+  const slides: SlideData[] = images.map((img: Image) => ({
+    id: img.id,
+    image: img.image,
+    title: img.title,
+    subtitle: img.subtitle,
+    description: img.description
+  }));
+
   const prevImage = () => {
-    setSelectdId((prev) => (prev <= 1 ? images.length : prev - 1));
+    setCurrentSlide((prev) => (prev <= 0 ? slides.length - 1 : prev - 1));
   };
   const nextImage = () => {
-    setSelectdId((prev) => (prev >= images.length ? 1 : prev + 1));
+    setCurrentSlide((prev) => (prev >= slides.length - 1 ? 0 : prev + 1));
   };
   return (
-    
     <Container id="about">
+      <h2></h2>
+      <div className="content-wrapper">
+        <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
+          <div className="image">
+            <div className="image_slider">
+              <div className="images">
+                <img src={slides[currentSlide].image} alt={slides[currentSlide].title} />
+              </div>
 
-          
-    <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-      <div className="image">
-        <div className="image_slider">
-          <div className="images">
-            {images
-              .filter((image) => image.id === selectedId)
-              .map((image) => {
-                return <img key={image.id} src = {image.image} alt={image.name} />;
-              })}
-          </div>
+              <button 
+                className="slide-button prev" 
+                onClick={prevImage}
+                aria-label="Previous image"
+              >
+                <FiChevronLeft size={24} />
+              </button>
 
-          <div className="thumbnails">
-            {images.map((image: Image) => {
-              return (
-                <img
-                  key={image.id}
-                  alt={image.name}
-                  src={image.image}
-                  onClick={() => setSelectdId(image.id)}
-                />
-              );
-            })}
+              <button 
+                className="slide-button next" 
+                onClick={nextImage}
+                aria-label="Next image"
+              >
+                <FiChevronRight size={24} />
+              </button>
+
+              <div className="thumbnails">
+                {images.map((image: Image) => (
+                  <img
+                    key={image.id}
+                    alt={image.name}
+                    src={image.image}
+                    onClick={() => setCurrentSlide(image.id - 1)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
-          <button className="button_prev" onClick={prevImage}>
-            {" "}
-            Prev{" "}
-          </button>
-          <button className="button_next" onClick={nextImage}>
-            {" "}
-            Next{" "}
-          </button>
+        </ScrollAnimation>
+
+        <div className="description">
+          <ScrollAnimation animateIn="fadeInRight" delay={0.10 * 1000}>
+            <h1>{slides[currentSlide].title}</h1>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" delay={0.30 * 1000}>
+            <p>{slides[currentSlide].description}</p>
+          </ScrollAnimation>
         </div>
       </div>
-      </ScrollAnimation>
-      <div>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.10 * 1000}>
-            <h1>My Cutie CAT</h1>
-            </ScrollAnimation>
-            <br/>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-            <h2>CAT:  Mochi</h2>
-            </ScrollAnimation>
-            <br/>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.30 * 1000}>
-            <h2>Age:  3 Years old</h2>
-            </ScrollAnimation>
-            <br/>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.40 * 1000}>
-            <h2>Birth: 2021.11.7</h2>
-            </ScrollAnimation>
-            <br/>
-            <ScrollAnimation animateIn="fadeInRight" delay={0.40 * 1000}>
-            <h2>Favorite Food: Chicken</h2>
-            </ScrollAnimation>
-            <br/>
-    </div>
     </Container>
   )
 }

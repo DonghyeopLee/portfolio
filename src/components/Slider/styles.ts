@@ -1,124 +1,165 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-.Head2{
+  margin: 8rem 0;
+
+  h2 {
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
-margin-top: 12rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8rem;
+
+  .content-wrapper {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    
+    .image {
+      flex: 0 0 70%;
+      width: 70%;
+    }
+
+    .description {
+      flex: 0 0 30%;
+      width: 30%;
+      padding: 0 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 0 1rem;
+      
+      .image,
+      .description {
+        width: 100%;
+        flex: 1;
+      }
+    }
+  }
 
   .image {
+    flex: 1;
     position: relative;
     width: 100%;
-
   }
+
   .image_slider {
     border-radius: 5px;
     overflow: hidden;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 600px;
     box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.4);
-    text-align:center; 
+    position: relative;
   }
   
   .image_slider .images {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
   }
-  
-  .image_slider .images img {
-    position: block;
-    width: 70%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.5s ease-in-out;
+
+  .description {
+    flex: 0 0 30%;
+    width: 30%;
+    padding: 0 1rem;
+    
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    
+    p {
+      white-space: pre-line;
+      line-height: 1.8;
+      font-size: 1.4rem;
+      color: #fff;
+      
+      /* Style for bullet points */
+      ul {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        color: #fff;
+      }
+      
+      /* Add some spacing between sections */
+      & > *:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
   }
-  
-  .button_prev,
-  .button_next {
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .button_next {
-    right: 0;
-  }
-  
-  .button_next:hover,
-  .button_prev:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .image_slider .thumbnails {
+
+  /* Thumbnail styles */
+  .thumbnails {
     position: absolute;
     bottom: 5px;
     width: 100%;
-    height: 120px;
+    height: 80px;
     display: flex;
     justify-content: center;
     gap: 5px;
+    
+    img {
+      height: 60px;
+      width: auto;
+      cursor: pointer;
+      border: 2px solid transparent;
+      object-fit: cover;
+      
+      &:hover {
+        border-color: #fff;
+      }
+    }
   }
-  
-  .image_slider .thumbnails img {
-    width:100;
-    cursor: 120px pointer;
-    border: 2px solid transparent;
-    object-fit: cover;
-  }
-@media only screen and (max-width: 960px) {
 
+  /* Slide button styles */
+  .slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    &.prev {
+      left: 20px;
+    }
+
+    &.next {
+      right: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
     .image_slider {
-      max-width: 100%;
-      margin-top: 4rem;
-      img{
-        margin-top: 2rem;
-        width: 100%;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
+      height: 500px;
     }
-  }
 
-  @media (max-width: 960px){
-    display: block;
-    text-align: center;
-    
-    .hard-skills{
-      justify-content: center;
+    .description {
+      padding: 1rem 0;
     }
-    .about-image{
-      display: center;
-      max-width: 100%;
-      img{
-        margin-top: 2rem;
-        float: right;
-        width: 100%;
-        filter: grayscale(0);
-        transition: filter 0.5s;
-        &:hover{
-          filter: grayscale(0);
-        }
-    }
-    
-    
   }
 `
